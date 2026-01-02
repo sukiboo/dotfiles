@@ -3,6 +3,32 @@
 This is my dotfile repo. There are many like it but this one is mine.
 
 
+## Cursor
+
+My Cursor configuration. It's where the work happens nowadays because AI.
+
+#### Setup
+
+To use this Cursor configuration:
+
+1. Install Cursor (if not already installed):
+   - Download from [cursor.sh](https://cursor.sh)
+
+2. Copy files from `cursor/User/` to `~/.config/Cursor/User/`:
+   ```bash
+   cp -r cursor/User/* ~/.config/Cursor/User/
+   ```
+
+#### What's included
+
+The configuration includes:
+- **Editor settings**: Minimalist setup with AI suggestions disabled, word wrap, and custom terminal profiles
+- **Keybindings**: Custom keyboard shortcuts (e.g., F5 for Python execution)
+- **Python configuration**: Type checking and analysis settings
+- **Terminal integration**: Custom tmux-based terminal profile
+- **UI preferences**: Disabled minimap, custom tree indentation, and workspace trust settings
+
+
 ## Geany
 
 My Geany configuration. It's a nice lightweight IDE that was my go-to prior to Cursor, and I still choose it for non-AI workflows.
