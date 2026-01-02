@@ -80,3 +80,32 @@ The configuration includes:
 - **Security**: Private key detection, Python security issues (bandit)
 - **Python tools**: Type checking (mypy), import sorting (isort), linting (flake8), formatting (black)
 - **Jupyter notebooks**: Same Python tools applied to `.ipynb` files via nbQA
+
+
+## Texmaker
+
+My Texmaker configuration. An open source LaTeX editor with syntax highlighting and integrated PDF viewer.
+
+#### Setup
+
+To use this Texmaker configuration:
+
+1. Install Texmaker:
+   ```bash
+   sudo apt install texmaker
+   ```
+
+2. Copy files from `texmaker/` to `~/.config/xm1/`:
+   ```bash
+   cp -r texmaker/xm1/* ~/.config/xm1/
+   cp texmaker/settings.ini ~/.config/xm1/
+   ```
+
+#### What's included
+
+The configuration includes:
+- **Editor settings**: Font preferences, syntax highlighting colors, tab settings
+- **Build commands**: LaTeX, PDFLaTeX, BibTeX, and other compilation tools
+- **Spell checker**: Custom dictionary with technical terms
+- **UI preferences**: Window geometry, toolbar visibility, and view settings
+
