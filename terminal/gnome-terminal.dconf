@@ -1,0 +1,26 @@
+[legacy]
+theme-variant='dark'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+bold-is-bright=true
+default-size-columns=80
+# Color palette (hex codes for reference):
+#   0: #333333
+#   1: #ff4488
+#   2: #44ff88
+#   3: #ff8844
+#   4: #44ffff
+#   5: #8844ff
+#   6: #00dddd
+#   7: #cccccc
+#   8: #555555
+#   9: #ee66aa
+#  10: #00aa88
+#  11: #eeaa66
+#  12: #66aaee
+#  13: #aa66ee
+#  14: #44ffff
+#  15: #eeeeee
+palette=['rgb(51,51,51)', 'rgb(255,68,136)', 'rgb(68,255,136)', 'rgb(255,136,68)', 'rgb(68,255,255)', 'rgb(136,68,255)', 'rgb(0,221,221)', 'rgb(204,204,204)', 'rgb(85,85,85)', 'rgb(238,102,170)', 'rgb(0,170,136)', 'rgb(238,170,102)', 'rgb(102,170,238)', 'rgb(170,102,238)', 'rgb(68,255,255)', 'rgb(238,238,238)']
+use-theme-transparency=false
+visible-name='sbn'

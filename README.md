@@ -29,6 +29,36 @@ The configuration includes:
 - **UI preferences**: Disabled minimap, custom tree indentation, and workspace trust settings
 
 
+## Terminal
+
+My GNOME Terminal color scheme. A dark theme with a custom color palette.
+
+#### Setup
+
+To use this terminal color configuration:
+
+1. Navigate to the `terminal/` directory:
+   ```bash
+   cd terminal/
+   ```
+
+2. Run the installation script:
+   ```bash
+   ./install.sh
+   ```
+
+   The script will automatically generate a new profile UUID and set it as default.
+
+3. Restart your terminal for changes to take effect.
+
+#### What's included
+
+The configuration includes:
+- **Color palette**: Custom 16-color scheme with dark background
+- **Profile settings**: Bold-is-bright enabled, custom column width
+- **Theme**: Dark theme variant
+
+
 ## Geany
 
 My Geany configuration. It's a nice lightweight IDE that was my go-to prior to Cursor, and I still choose it for non-AI workflows.
