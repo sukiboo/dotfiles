@@ -34,7 +34,7 @@ repos:
     rev: 7.1.1
     hooks:
       - id: flake8
-        args: [--ignore=E501,F541, --select=F,E9,K1,W605]
+        args: ['--extend-ignore=E501,F541', '--select=F,E9,W605']
 
   # Python security checks
   - repo: https://github.com/PyCQA/bandit
@@ -59,6 +59,6 @@ repos:
       - id: nbqa-isort
         args: [--profile=black, --combine-as]
       - id: nbqa-flake8
-        args: [--ignore=E501,F541, --select=F,E9,K1,W605]
+        args: ['--extend-ignore=E501,F541', '--select=F,E9,W605']
       - id: nbqa-black
         args: [--line-length=100]
