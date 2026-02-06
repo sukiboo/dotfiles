@@ -1,12 +1,7 @@
-After running /init, move CLAUDE.md to .claude/CLAUDE.md
+# Instructions for Claude Code
 
-No docstrings for files or methods. Only brief class descriptions if needed.
-No comments, except to indicate non-trivial behavior.
-Keep code changes as minimal as possible.
-Code should always be elegant and concise.
-If the current codebase can be cleaned up, suggest it.
-
-# This file defines standing instructions for Claude Code when working in this repository.
+**Setup:**
+- After running `/init`, move `CLAUDE.md` to `.claude/CLAUDE.md`
 
 **General rules:**
 - Make the smallest possible code changes needed to accomplish the task.
