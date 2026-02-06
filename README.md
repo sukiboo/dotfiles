@@ -29,6 +29,22 @@ The configuration includes:
 - **UI preferences**: Disabled minimap, custom tree indentation, and workspace trust settings
 
 
+## Claude Code
+
+Claude is love, Claude is life.
+
+#### Setup
+
+Copy `claude/CLAUDE.md` to `~/.claude/CLAUDE.md`:
+```bash
+mkdir -p ~/.claude && cp claude/CLAUDE.md ~/.claude/CLAUDE.md
+```
+
+#### What's included
+
+The global Claude config defining my coding preferences.
+
+
 ## Terminal
 
 My GNOME Terminal color scheme. A dark theme with a custom color palette.
