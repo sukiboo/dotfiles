@@ -5,6 +5,7 @@ repos:
     hooks:
       - id: check-json
       - id: check-yaml
+        args: [--unsafe]
       - id: check-toml
       - id: check-xml
       - id: check-added-large-files
