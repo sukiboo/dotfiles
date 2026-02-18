@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+
+      "Bash(pwd)",
+      "Bash(ls *)",
+      "Bash(cd *)",
+
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+
+      "Bash(rg *)",
+      "Bash(grep *)",
+      "Bash(find *)",
+
+      "Bash(git *)",
+      "Bash(uv *)",
+      "Bash(pip *)",
+      "Bash(python *)",
+
+      "Bash(curl https://*)",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(sudo *)",
+      "Bash(* | sh)",
+      "Bash(* | bash)",
+
+      "Bash(git * --force)",
+      "Bash(git * --hard)",
+      "Bash(git clean *)",
+
+      "Bash(rm *)",
+      "Bash(dd *)",
+      "Bash(mkfs *)"
+    ]
+  }
+}

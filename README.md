@@ -35,14 +35,15 @@ Claude is love, Claude is life.
 
 #### Setup
 
-Copy `claude/CLAUDE.md` to `~/.claude/CLAUDE.md`:
+Copy `claude/CLAUDE.md` to `~/.claude/CLAUDE.md` and `claude/settings.json` to `~/.claude/settings.json`:
 ```bash
-mkdir -p ~/.claude && cp claude/CLAUDE.md ~/.claude/CLAUDE.md
+mkdir -p ~/.claude && cp claude/CLAUDE.md claude/settings.json ~/.claude/
 ```
 
 #### What's included
 
-The global Claude config defining my coding preferences.
+- **CLAUDE.md**: Global instructions defining my coding preferences.
+- **settings.json**: Permission rules for allowed and denied shell commands.
 
 
 ## Terminal
