@@ -66,8 +66,11 @@ out_fmt=$(fmt_num "${output_tokens:-0}")
 
 # print statusline
 printf "%s"                                                 "$chroot_prefix"
-printf "${bgrn}%s:${rst}${bblu}%s${rst}"                    "$(whoami)" "$short_cwd"
-printf "${sep}${blu}%s${rst}"                               "$model_id"
+if [ "${TERM_PROGRAM:-}" != "vscode" ]; then
+  printf "${bgrn}%s:${rst}${bblu}%s${rst}"                  "$(whoami)" "$short_cwd"
+  printf "${sep}"
+fi
+printf "${blu}%s${rst}"                                     "$model_id"
 printf "${sep}${ylw}%s${rst}${dim}/${rst}${ylw}%s${rst}"    "$ctx_pct" "$ctx_size_k"
 printf "${sep}${grn}+%s${rst}${dim}/${rst}${red}-%s${rst}"  "${lines_add:-0}" "${lines_rem:-0}"
 printf "${sep}${cyn}%s↑${rst} ${cyn}%s↓${rst}"              "$in_fmt" "$out_fmt"

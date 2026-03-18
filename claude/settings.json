@@ -1,11 +1,13 @@
 {
   "model": "opus",
   "effortLevel": "high",
+  "skipDangerousModePermissionPrompt": true,
   "statusLine": {
     "type": "command",
     "command": "bash $HOME/.claude/statusline-command.sh"
   },
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
       "Bash(echo *)",
       "Bash(wc *)",
