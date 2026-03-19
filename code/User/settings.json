@@ -1,0 +1,42 @@
+{
+    // appearance
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 16,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    // editing
+    "editor.formatOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    // disable suggestions & hints
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggest.selectionMode": "never",
+    "editor.inlineSuggest.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.inlayHints.enabled": "off",
+    "editor.codeLens": false,
+    "editor.lightbulb.enabled": "off",
+    "inlineChat.affordance": "off",
+    // explorer & files
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.openRepositoryInParentFolders": "never",
+    "update.showReleaseNotes": false,
+    // jupyter
+    "notebook.output.textLineLimit": 100,
+    "notebook.output.wordWrap": true,
+    "jupyter.askForKernelRestart": false,
+    // python
+    "python.analysis.typeCheckingMode": "standard",
+    // lua styling for roblox
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua"
+    },
+    // claude code
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.useTerminal": true,
+}

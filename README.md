@@ -1,11 +1,47 @@
 # dotfiles
 
-This is my dotfile repo. There are many like it but this one is mine.
+This is my dotfiles repo. There are many like it, but this one is mine.
+
+
+## Claude Code
+
+Claude is love, Claude is life.
+
+#### Setup
+
+Copy files from `claude/` to `~/.claude/`:
+```bash
+mkdir -p ~/.claude && cp claude/CLAUDE.md claude/settings.json claude/statusline-command.sh ~/.claude/
+```
+
+#### What's included
+
+- **CLAUDE.md**: Global instructions defining my coding preferences.
+- **settings.json**: Permission rules for allowed and denied shell commands.
+- **statusline-command.sh**: Custom status line showing model, context usage, token counts, and cost.
+
+
+## VS Code
+
+VSCode is my IDE of choice nowadays (*again!*), mainly because of seamless Claude Code integration.
+When every "Agentic IDE" is a "VSCode fork", why not use the original?
+
+#### Setup
+
+1. Copy files from `code/User/` to `~/.config/Code/User/`:
+   ```bash
+   cp -r code/User/* ~/.config/Code/User/
+   ```
+
+#### What's included
+
+Editor settings, Python/Lua/Jupyter config, Claude Code integration, and UI preferences.
 
 
 ## Cursor
 
-My Cursor configuration. It's where the work happens nowadays because AI.
+Cursor is where the work happens nowadays because AI (*well, maybe not anymore...*).
+My preferred configuration -- minimal UI, no AI suggestions, format on save.
 
 #### Setup
 
@@ -21,34 +57,13 @@ To use this Cursor configuration:
 
 #### What's included
 
-The configuration includes:
-- **Editor settings**: Minimalist setup with AI suggestions disabled, word wrap, and custom terminal profiles
-- **Keybindings**: Custom keyboard shortcuts (e.g., F5 for Python execution)
-- **Python configuration**: Type checking and analysis settings
-- **Terminal integration**: Custom tmux-based terminal profile
-- **UI preferences**: Disabled minimap, custom tree indentation, and workspace trust settings
-
-
-## Claude Code
-
-Claude is love, Claude is life.
-
-#### Setup
-
-Copy `claude/CLAUDE.md` to `~/.claude/CLAUDE.md` and `claude/settings.json` to `~/.claude/settings.json`:
-```bash
-mkdir -p ~/.claude && cp claude/CLAUDE.md claude/settings.json ~/.claude/
-```
-
-#### What's included
-
-- **CLAUDE.md**: Global instructions defining my coding preferences.
-- **settings.json**: Permission rules for allowed and denied shell commands.
+Editor settings, keybindings (F5 for Python), Python config, and UI preferences.
 
 
 ## Terminal
 
-My GNOME Terminal color scheme. A dark theme with a custom color palette.
+My GNOME Terminal color scheme.
+Nothing fancy, just a dark theme with a custom color palette that I find a bit more pleasant to look at -- and I do have to look at terminals a lot.
 
 #### Setup
 
@@ -70,15 +85,12 @@ To use this terminal color configuration:
 
 #### What's included
 
-The configuration includes:
-- **Color palette**: Custom 16-color scheme with dark background
-- **Profile settings**: Bold-is-bright enabled, custom column width
-- **Theme**: Dark theme variant
+Custom 16-color dark palette, bold-is-bright, and profile settings.
 
 
 ## Geany
 
-My Geany configuration. It's a nice lightweight IDE that was my go-to prior to Cursor, and I still choose it for non-AI workflows.
+My Geany configuration. It's a nice lightweight IDE that was my go-to prior to Cursor, and I still choose it for non-AI workflows (*even though those are becoming excessively rare*).
 
 #### Setup
 
@@ -108,16 +120,12 @@ To use this Geany configuration:
 
 #### What's included
 
-The configuration includes:
-- **Colorschemes**: Custom dark themes
-- **Keybindings**: Custom keyboard shortcuts
-- **Filetype definitions**: Python syntax highlighting and build commands
-- **Editor settings**: Preferences for indentation, fonts, and UI layout
+Colorschemes, keybindings, filetype definitions, and editor settings.
 
 
 ## Pre-commit
 
-Pre-commit configuration (`.pre-commit-config.yaml`) that I use in my Python projects.
+Pre-commit configuration (`.pre-commit-config.yaml`) that I use in my Python projects so that my code doesn't look like shit.
 
 #### Setup
 
@@ -147,17 +155,12 @@ To use this pre-commit configuration in a repository:
 
 #### What it checks
 
-The configuration includes:
-- **File validation**: JSON, YAML, TOML, XML syntax checks
-- **Code quality**: Trailing whitespace, end-of-file newlines, merge conflicts
-- **Security**: Private key detection, Python security issues (bandit)
-- **Python tools**: Type checking (mypy), import sorting (isort), linting (flake8), formatting (black)
-- **Jupyter notebooks**: Same Python tools applied to `.ipynb` files via nbQA
+File validation, code quality, security (bandit), Python tools (mypy, isort, flake8, black), and Jupyter support via nbQA.
 
 
 ## Texmaker
 
-My Texmaker configuration. An open source LaTeX editor with syntax highlighting and integrated PDF viewer.
+My Texmaker configuration. An open source LaTeX editor with syntax highlighting and integrated PDF viewer from the good old PhD days.
 
 #### Setup
 
@@ -176,9 +179,5 @@ To use this Texmaker configuration:
 
 #### What's included
 
-The configuration includes:
-- **Editor settings**: Font preferences, syntax highlighting colors, tab settings
-- **Build commands**: LaTeX, PDFLaTeX, BibTeX, and other compilation tools
-- **Spell checker**: Custom dictionary with technical terms
-- **UI preferences**: Window geometry, toolbar visibility, and view settings
+Editor settings, build commands, spell checker dictionary, and UI preferences.
 

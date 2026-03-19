@@ -1,4 +1,5 @@
 {
+    "workbench.colorTheme": "Default Dark Modern",
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
@@ -7,57 +8,28 @@
     "notebook.output.wordWrap": true,
     "jupyter.askForKernelRestart": false,
     "explorer.confirmDragAndDrop": false,
-    "[yaml]": {
-        "editor.tabSize": 4
-    },
     "files.trimTrailingWhitespace": true,
-    "workbench.tree.indent": 24,
-    "terminal.integrated.profiles.linux": {
-        "tmux-shell": {
-            "path": "tmux",
-            "args": [
-                "new-session",
-                "-A",
-                "-s",
-                "vscode:${workspaceFolder}"
-            ]
-        }
-    },
-    "terminal.integrated.defaultProfile.linux": "tmux-shell",
-    "terminal.integrated.defaultProfile.osx": "tmux-shell",
-    "jupyter.widgetScriptSources": [
-        "jsdelivr.com",
-        "unpkg.com"
-    ],
+    "workbench.tree.indent": 16,
     "editor.renderWhitespace": "all",
     "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 100,
     "explorer.confirmDelete": false,
     "git.openRepositoryInParentFolders": "never",
     "editor.inlayHints.enabled": "off",
     "editor.lightbulb.enabled": "off",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.inlineSuggest.edits.renderSideBySide": "never",
-    "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.inlineSuggest.edits.allowCodeShifting": "never",
     "editor.inlineSuggest.enabled": false,
-    "editor.parameterHints.cycle": false,
     "editor.parameterHints.enabled": false,
-    "editor.hover.above": false,
-    "editor.hover.enabled": false,
-    "editor.hover.sticky": false,
     "editor.quickSuggestions": {
         "other": "off"
     },
     "editor.suggest.selectionMode": "never",
     "docker.extension.dockerEngineAvailabilityPrompt": false,
     "python.analysis.typeCheckingMode": "basic",
-    "workbench.colorTheme": "Default Dark Modern",
-    "cursorpyright.analysis.typeCheckingMode": "basic",
+    "cursorpyright.analysis.typeCheckingMode": "standard",
     "git.enableSmartCommit": true,
     "python.createEnvironment.trigger": "off",
     "python.terminal.activateEnvironment": false,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "explorer.confirmPasteNative": false
+    "explorer.confirmPasteNative": false,
 }
