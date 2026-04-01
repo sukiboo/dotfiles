@@ -1,9 +1,11 @@
 {
     // appearance
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Dark+",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 16,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.editor.useModal": "off",
+    "workbench.editor.autoLockGroups": {},
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.wordWrap": "on",
@@ -24,7 +26,8 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "git.openRepositoryInParentFolders": "never",
+    "git.openRepositoryInParentFolders": "always",
+    "terminal.integrated.enable": "off",
     "update.showReleaseNotes": false,
     // jupyter
     "notebook.output.textLineLimit": 100,
