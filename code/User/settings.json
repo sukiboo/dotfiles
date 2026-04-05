@@ -27,7 +27,7 @@
     "explorer.confirmDragAndDrop": false,
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "always",
-    "terminal.integrated.enable": "off",
+    "terminal.integrated.showLinkHover": false,
     "update.showReleaseNotes": false,
     // jupyter
     "notebook.output.textLineLimit": 100,
