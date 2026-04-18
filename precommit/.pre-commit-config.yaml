@@ -21,7 +21,7 @@ repos:
     rev: v1.19.1
     hooks:
       - id: mypy
-        additional_dependencies: [types-PyYAML]
+        additional_dependencies: [types-PyYAML, types-requests, types-psutil]
 
   # Python import sorting
   - repo: https://github.com/PyCQA/isort
