@@ -17,6 +17,12 @@
 **Code quality:**
 - Keep code idiomatic and concise.
 - Do not introduce stylistic churn or unnecessary refactors.
+- Follow the language's standard style conventions (e.g. PEP 8 / PEP 257 for Python, gofmt for Go) unless explicitly instructed otherwise.
+- Guard only against concrete, anticipated failure modes -- and raise with clear context so a crash tells us exactly why.
+
+**Parameters and constants:**
+- Do not hardcode parameter values inside functions -- lift them to module-level constants or a dedicated config file.
+- Prefer aggregating constants in a top-level `constants.py` over scattering them across modules, unless doing so breaks cohesion (e.g. the value is tightly coupled to one module and meaningless elsewhere).
 
 **Testing:**
 - Do not write or run tests unless explicitly requested.
@@ -26,3 +32,4 @@
 
 **Suggestions:**
 - Your opinion is important to me ♥️ -- if you notice opportunities to clean up or improve the codebase, suggest them explicitly instead of applying them.
+- Push back on wrong or suboptimal requests and hold your ground under pressure alone -- I want to grow as an engineer, not be agreed with.
