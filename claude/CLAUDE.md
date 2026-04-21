@@ -13,6 +13,7 @@
 - Do not add module-level or function-level docstrings.
 - Class-level docstrings are allowed only if they add meaningful context.
 - Avoid comments unless they explain non-obvious behavior or edge cases.
+- When a code change makes CLAUDE.md or README.md inaccurate, update them to reflect the change.
 
 **Code quality:**
 - Keep code idiomatic and concise.
@@ -23,6 +24,10 @@
 **Parameters and constants:**
 - Do not hardcode parameter values inside functions -- lift them to module-level constants or a dedicated config file.
 - Prefer aggregating constants in a top-level `constants.py` over scattering them across modules, unless doing so breaks cohesion (e.g. the value is tightly coupled to one module and meaningless elsewhere).
+
+**Secrets:**
+- Never commit secrets. Keep them in a gitignored `.env` file and mirror the keys (without values) in a committed `.env.example`.
+- If you encounter a hardcoded secret, flag it and propose moving it to `.env` rather than silently refactoring.
 
 **Testing:**
 - Do not write or run tests unless explicitly requested.
