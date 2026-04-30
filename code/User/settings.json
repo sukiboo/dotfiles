@@ -35,6 +35,7 @@
     "jupyter.askForKernelRestart": false,
     // python
     "python.analysis.typeCheckingMode": "standard",
+    "python.terminal.activateEnvironment": false,
     // lua styling for roblox
     "[lua]": {
         "editor.defaultFormatter": "JohnnyMorganz.stylua"
