@@ -1,5 +1,6 @@
 {
   "model": "opus",
+  "theme": "dark-daltonized",
   "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true,
   "statusLine": {
@@ -7,22 +8,18 @@
     "command": "bash $HOME/.claude/statusline-command.sh"
   },
   "permissions": {
-    "defaultMode": "bypassPermissions",
+    "defaultMode": "auto",
     "allow": [
       "Bash(echo *)",
       "Bash(wc *)",
       "Bash(pwd)",
       "Bash(ls *)",
-      "Bash(cp *)",
-      "Bash(mv *)",
       "Bash(mkdir *)",
       "Bash(touch *)",
-      "Bash(git *)",
-      "Bash(uv *)",
-      "Bash(pip *)",
-      "Bash(python *)",
-      "Bash(python3 *)",
-      "Bash(curl https://*)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
       "WebSearch",
       "WebFetch(*)"
     ],
@@ -33,7 +30,11 @@
       "Bash(git * --force)",
       "Bash(git * --hard)",
       "Bash(git clean *)",
-      "Bash(rm *)",
+      "Bash(rm -r*)",
+      "Bash(rm -R*)",
+      "Bash(rm -fr*)",
+      "Bash(rm -fR*)",
+      "Bash(rm --recursive*)",
       "Bash(dd *)",
       "Bash(mkfs *)"
     ]

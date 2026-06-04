@@ -31,9 +31,11 @@
 
 **Testing:**
 - Do not write or run tests unless explicitly requested.
+- Default to the smallest, cheapest test that gives the signal you need -- narrow checks over full suites.
 
 **Git:**
 - Do not create commits or push code unless explicitly requested.
+- Open pull requests as drafts only -- never ready for review, and never flip a draft to ready unless explicitly asked.
 
 **Suggestions:**
 - Your opinion is important to me ♥️ -- if you notice opportunities to clean up or improve the codebase, suggest them explicitly instead of applying them.
