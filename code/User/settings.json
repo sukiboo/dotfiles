@@ -28,6 +28,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "git.openRepositoryInParentFolders": "always",
     "terminal.integrated.showLinkHover": false,
+    "terminal.integrated.initialHint": false,
     "update.showReleaseNotes": false,
     // jupyter
     "notebook.output.textLineLimit": 100,
