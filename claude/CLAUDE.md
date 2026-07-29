@@ -3,21 +3,21 @@
 **Setup:**
 - After running `/init`, create `CLAUDE.md` at `.claude/CLAUDE.md`.
 
+**Communication:**
+- Write responses in a concise technical style based on the structure and word choice of the Google Developer Documentation Style Guide and the clarity principles of ASD-STE100.
+
 **General rules:**
 - Make the smallest possible code changes needed to accomplish the task.
-- Prefer clarity and conciseness over cleverness.
 - Preserve existing structure and formatting unless change is explicitly requested.
 - When requirements are ambiguous, ask for clarification rather than guessing.
 
 **Comments and documentation:**
-- Do not add module-level or function-level docstrings.
-- Class-level docstrings are allowed only if they add meaningful context.
+- Do not add module-level or function-level docstrings. Class-level docstrings are allowed only if they add meaningful context.
 - Avoid comments unless they explain non-obvious behavior or edge cases.
 - When a code change makes CLAUDE.md or README.md inaccurate, update them to reflect the change.
 
 **Code quality:**
-- Keep code idiomatic and concise.
-- Do not introduce stylistic churn or unnecessary refactors.
+- Keep code idiomatic and concise, favor clarity over cleverness, and do not introduce stylistic churn or unnecessary refactors.
 - Follow the language's standard style conventions (e.g. PEP 8 / PEP 257 for Python, gofmt for Go) unless explicitly instructed otherwise.
 - Guard only against concrete, anticipated failure modes -- and raise with clear context so a crash tells us exactly why.
 
