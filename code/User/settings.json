@@ -12,6 +12,7 @@
     // editing
     "editor.formatOnSave": true,
     "files.trimTrailingWhitespace": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     // disable suggestions & hints
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
@@ -44,4 +45,29 @@
     // claude code
     "claudeCode.preferredLocation": "panel",
     "claudeCode.useTerminal": true,
+    // peacock settings
+    "peacock.surpriseMeOnStartup": true,
+    "peacock.surpriseMeInFavoritesOrder": true,
+    "peacock.surpriseMeFromFavoritesOnly": true,
+    "peacock.affectActivityBar": false,
+    "peacock.affectTabActiveBorder": true,
+    "peacock.showColorInStatusBar": false,
+    "peacock.favoriteColors": [
+        {
+            "name": "blue",
+            "value": "#5599cc"
+        },
+        {
+            "name": "orange",
+            "value": "#cc9955"
+        },
+        {
+            "name": "green",
+            "value": "#55cc99"
+        },
+        {
+            "name": "pink",
+            "value": "#cc5599"
+        },
+    ],
 }
