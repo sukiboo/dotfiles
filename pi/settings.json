@@ -1,0 +1,9 @@
+{
+  "theme": "sukiboo",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-sol",
+  "defaultThinkingLevel": "high",
+  "packages": [
+    "npm:pi-codex-image-gen"
+  ]
+}

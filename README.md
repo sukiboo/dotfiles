@@ -14,14 +14,45 @@ Run the installation script:
 ./agents/install.sh
 ```
 
-It copies `AGENTS.md` and `skills/` into `~/.agents/`, then links `~/.claude/CLAUDE.md` and `~/.claude/skills/*` to them.
-Re-running the script picks up every skill directory in `~/.agents/skills/`.
+It copies `AGENTS.md` and `skills/` into `~/.agents/`, links Claude's instructions and skills to them, and links Pi's `AGENTS.md` to the shared instructions.
+Pi discovers `~/.agents/skills/` directly. Re-running the script picks up every skill directory in that location.
 
 #### What's included
 
 - **AGENTS.md**: Global instructions defining my coding preferences.
 - **skills/find-skills**: Finds and installs skills from the open skill ecosystem, from [vercel-labs/skills](https://github.com/vercel-labs/skills).
 - **skills/my-servers**: My registry of remote servers and how to reach them over SSH.
+
+
+## Pi
+
+Pi is my currently preferred harness because CC is driving me insane since Opus 5.
+
+#### Setup
+
+1. Install Pi:
+   ```bash
+   npm install -g --ignore-scripts @earendil-works/pi-coding-agent
+   ```
+
+2. Install the shared instructions and skills (see [Agents](#agents)).
+
+3. Install the Pi-specific settings and resources:
+   ```bash
+   ./pi/install.sh
+   ```
+
+4. Install or update the configured Pi packages:
+   ```bash
+   pi update --extensions
+   ```
+
+#### What's included
+
+- **settings.json**: Theme, default model and thinking level, and package declarations.
+- **extensions/statusline.ts**: Custom footer showing model, context usage, diff statistics, token counts, cost, and Pi version.
+- **themes/sukiboo.json**: Custom theme based on my terminal palette.
+- Authentication, sessions, generated images, package caches, and other machine-local state are intentionally excluded.
 
 
 ## Claude Code
