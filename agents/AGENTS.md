@@ -1,7 +1,11 @@
-# Instructions for Claude Code
+# Agent Instructions
 
-**Setup:**
-- After running `/init`, create `CLAUDE.md` at `.claude/CLAUDE.md`.
+**Project notes:**
+- Keep project-local instructions and notes in `./AGENTS.md` at the project root.
+
+**Skills:**
+- Keep shared skills in `~/.agents/skills/`; harness-specific skill directories are compatibility links or contain harness-managed skills.
+- Resolve skill-relative paths against the directory containing `SKILL.md`, following symlinks. If a skill uses `{baseDir}`, substitute that resolved directory; it is not a shell variable. Interpret other path placeholders as defined by the skill.
 
 **Communication:**
 - Write responses in a concise technical style based on the structure and word choice of the Google Developer Documentation Style Guide and the clarity principles of ASD-STE100.
@@ -14,7 +18,7 @@
 **Comments and documentation:**
 - Do not add module-level or function-level docstrings. Class-level docstrings are allowed only if they add meaningful context.
 - Avoid comments unless they explain non-obvious behavior or edge cases.
-- When a code change makes CLAUDE.md or README.md inaccurate, update them to reflect the change.
+- When a code change makes AGENTS.md or README.md inaccurate, update them to reflect the change.
 
 **Code quality:**
 - Keep code idiomatic and concise, favor clarity over cleverness, and do not introduce stylistic churn or unnecessary refactors.

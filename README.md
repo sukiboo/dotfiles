@@ -3,22 +3,45 @@
 This is my dotfiles repo. There are many like it, but this one is mine.
 
 
+## Agents
+
+Aggregated instructions and skills shared by all agents.
+
+#### Setup
+
+Run the installation script:
+```bash
+./agents/install.sh
+```
+
+It copies `AGENTS.md` and `skills/` into `~/.agents/`, then links `~/.claude/CLAUDE.md` and `~/.claude/skills/*` to them.
+Re-running the script picks up every skill directory in `~/.agents/skills/`.
+
+#### What's included
+
+- **AGENTS.md**: Global instructions defining my coding preferences.
+- **skills/find-skills**: Finds and installs skills from the open skill ecosystem, from [vercel-labs/skills](https://github.com/vercel-labs/skills).
+- **skills/my-servers**: My registry of remote servers and how to reach them over SSH.
+
+
 ## Claude Code
 
 Claude is love, Claude is life.
 
 #### Setup
 
-Copy files from `claude/` to `~/.claude/`:
-```bash
-mkdir -p ~/.claude && cp claude/CLAUDE.md claude/settings.json claude/statusline-command.sh ~/.claude/
-```
+1. Install the shared instructions and skills (see [Agents](#agents)).
+
+2. Copy the Claude-specific files from `claude/` to `~/.claude/`:
+   ```bash
+   mkdir -p ~/.claude && cp claude/settings.json claude/statusline-command.sh ~/.claude/
+   ```
 
 #### What's included
 
-- **CLAUDE.md**: Global instructions defining my coding preferences.
-- **settings.json**: Permission rules for allowed and denied shell commands.
+- **settings.json**: Permission rules, enabled plugins, and model, theme, and effort preferences.
 - **statusline-command.sh**: Custom status line showing model, context usage, token counts, and cost.
+- Global instructions and skills are symlinked from `~/.agents/`, not stored here.
 
 
 ## VS Code

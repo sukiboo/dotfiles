@@ -62,10 +62,8 @@ password auth is fragile and insecure besides.
 
 Instead, report what you found and offer the two clean paths — let the user pick:
 
-1. **They run it themselves.** In Claude Code they can type
-   `! ssh <host> "<command>"` at the prompt; it runs in this session and the
-   output comes straight back into the conversation for you to use. Best for a
-   one-off.
+1. **They run it themselves.** They can run `ssh <host> "<command>"` in a
+   terminal on a machine with the keys and share the output. Best for a one-off.
 2. **Install the key.** If they want you connecting directly, they add the host's
    `Host` block to `~/.ssh/config` and drop its key into `~/.ssh/` (`chmod 400`).
    After that the alias works and you can drive it yourself.
