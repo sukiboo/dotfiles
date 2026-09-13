@@ -37,6 +37,8 @@ Claude is love, Claude is life.
    mkdir -p ~/.claude && cp claude/settings.json claude/statusline-command.sh ~/.claude/
    ```
 
+3. Ensure `bash`, `bc`, and `jq` are installed for the custom status line.
+
 #### What's included
 
 - **settings.json**: Permission rules, enabled plugins, and model, theme, and effort preferences.
@@ -194,13 +196,13 @@ To use this Texmaker configuration:
    sudo apt install texmaker
    ```
 
-2. Copy files from `texmaker/` to `~/.config/xm1/`:
+2. Copy the Texmaker configuration to `~/.config/xm1/`:
    ```bash
-   cp -r texmaker/xm1/* ~/.config/xm1/
-   cp texmaker/settings.ini ~/.config/xm1/
+   mkdir -p ~/.config/xm1
+   cp -r texmaker/xm1/. ~/.config/xm1/
    ```
 
 #### What's included
 
-Editor settings, build commands, spell checker dictionary, and UI preferences.
+Editor settings, build commands, spell checker dictionary, and view preferences.
 

@@ -18,15 +18,18 @@ sep="  "
 # format large numbers compactly (max 4 chars + suffix)
 fmt_num() {
   local n=${1:-0}
-  if   [ "$n" -lt 1000 ];        then echo "$n"
-  elif [ "$n" -lt 10000 ];       then printf "%.2fk" "$(echo "$n / 1000" | bc -l)"
-  elif [ "$n" -lt 100000 ];      then printf "%.1fk" "$(echo "$n / 1000" | bc -l)"
-  elif [ "$n" -lt 1000000 ];     then printf "%.0fk"  "$(echo "$n / 1000" | bc -l)"
-  elif [ "$n" -lt 10000000 ];    then printf "%.2fm" "$(echo "$n / 1000000" | bc -l)"
-  elif [ "$n" -lt 100000000 ];   then printf "%.1fm" "$(echo "$n / 1000000" | bc -l)"
-  elif [ "$n" -lt 1000000000 ];  then printf "%.0fm"  "$(echo "$n / 1000000" | bc -l)"
-  elif [ "$n" -lt 10000000000 ]; then printf "%.2ft" "$(echo "$n / 1000000000" | bc -l)"
-  else                                printf "%.1ft" "$(echo "$n / 1000000000" | bc -l)"
+  if   [ "$n" -lt 1000 ];           then echo "$n"
+  elif [ "$n" -lt 10000 ];          then printf "%.2fk" "$(echo "$n / 1000" | bc -l)"
+  elif [ "$n" -lt 100000 ];         then printf "%.1fk" "$(echo "$n / 1000" | bc -l)"
+  elif [ "$n" -lt 1000000 ];        then printf "%.0fk"  "$(echo "$n / 1000" | bc -l)"
+  elif [ "$n" -lt 10000000 ];       then printf "%.2fm" "$(echo "$n / 1000000" | bc -l)"
+  elif [ "$n" -lt 100000000 ];      then printf "%.1fm" "$(echo "$n / 1000000" | bc -l)"
+  elif [ "$n" -lt 1000000000 ];     then printf "%.0fm" "$(echo "$n / 1000000" | bc -l)"
+  elif [ "$n" -lt 10000000000 ];    then printf "%.2fb" "$(echo "$n / 1000000000" | bc -l)"
+  elif [ "$n" -lt 100000000000 ];   then printf "%.1fb" "$(echo "$n / 1000000000" | bc -l)"
+  elif [ "$n" -lt 1000000000000 ];  then printf "%.0fb" "$(echo "$n / 1000000000" | bc -l)"
+  elif [ "$n" -lt 10000000000000 ]; then printf "%.2ft" "$(echo "$n / 1000000000000" | bc -l)"
+  else                                   printf "%.1ft" "$(echo "$n / 1000000000000" | bc -l)"
   fi
 }
 
