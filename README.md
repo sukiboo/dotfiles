@@ -52,7 +52,14 @@ Pi is my currently preferred harness because CC is driving me insane since Opus 
 - **settings.json**: Theme, default model and thinking level, and package declarations.
 - **extensions/statusline.ts**: Custom footer showing model, context usage, diff statistics, token counts, cost, and Pi version.
 - **themes/sukiboo.json**: Custom theme based on my terminal palette.
+- **package.json** and **tsconfig.json**: Local TypeScript diagnostics for the extension.
 - Authentication, sessions, generated images, package caches, and other machine-local state are intentionally excluded.
+
+Install the development dependencies before editing or checking the extension:
+```bash
+npm install --prefix pi
+npm run check --prefix pi
+```
 
 
 ## Claude Code

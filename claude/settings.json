@@ -1,34 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(echo *)",
-      "Bash(wc *)",
-      "Bash(pwd)",
-      "Bash(ls *)",
-      "Bash(mkdir *)",
-      "Bash(touch *)",
-      "Bash(git status *)",
-      "Bash(git diff *)",
-      "Bash(git log *)",
-      "Bash(git show *)",
-      "WebSearch",
-      "WebFetch(*)"
-    ],
-    "deny": [
-      "Bash(sudo *)",
-      "Bash(* | sh)",
-      "Bash(* | bash)",
-      "Bash(git * --force)",
-      "Bash(git * --hard)",
-      "Bash(git clean *)",
-      "Bash(rm -r*)",
-      "Bash(rm -R*)",
-      "Bash(rm -fr*)",
-      "Bash(rm -fR*)",
-      "Bash(rm --recursive*)",
-      "Bash(dd *)",
-      "Bash(mkfs *)"
-    ],
     "defaultMode": "auto"
   },
   "model": "opus",
@@ -42,6 +13,6 @@
     "skill-creator@claude-plugins-official": true
   },
   "effortLevel": "xhigh",
-  "skipDangerousModePermissionPrompt": true,
+  "outputStyle": "Concise",
   "theme": "dark-daltonized"
 }
